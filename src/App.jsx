@@ -1,34 +1,63 @@
+// ...existing code...
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [personalInfo, setPersonalInfo] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    address: ''
+  });
+
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>🚀 Vite React Template</h1>
-        <p className="subtitle">by singharyan006</p>
+      <header>
+        <h1>CV Forge</h1>
+        <p>Build your professional CV with ease</p>
       </header>
       
-      <main className="app-main">
-        <div className="welcome-card">
-          <h2>Welcome to Your New Project!</h2>
-          <p>This template includes:</p>
-          <ul className="features-list">
-            <li>⚡ Vite for lightning-fast development</li>
-            <li>⚛️ React 19 with modern features</li>
-            <li>🔧 ESLint for code quality</li>
-            <li>📦 SWC for super-fast compilation</li>
-          </ul>
+      <main>
+        <div className="form-section">
+          <h2>Personal Information</h2>
+          <form>
+            <input 
+              type="text" 
+              placeholder="Full Name"
+              value={personalInfo.name}
+              onChange={(e) => setPersonalInfo({...personalInfo, name: e.target.value})}
+            />
+            <input 
+              type="email" 
+              placeholder="Email"
+              value={personalInfo.email}
+              onChange={(e) => setPersonalInfo({...personalInfo, email: e.target.value})}
+            />
+            <input 
+              type="tel" 
+              placeholder="Phone"
+              value={personalInfo.phone}
+              onChange={(e) => setPersonalInfo({...personalInfo, phone: e.target.value})}
+            />
+            <input 
+              type="text" 
+              placeholder="Address"
+              value={personalInfo.address}
+              onChange={(e) => setPersonalInfo({...personalInfo, address: e.target.value})}
+            />
+          </form>
         </div>
-        
-        <div className="getting-started">
-          <h3>Ready to start building?</h3>
-          <p>Edit <code>src/App.jsx</code> and save to see changes instantly!</p>
+
+        <div className="preview-section">
+          <h2>CV Preview</h2>
+          <div className="cv-preview">
+            <h3>{personalInfo.name || 'Your Name'}</h3>
+            <p>{personalInfo.email || 'your.email@example.com'}</p>
+            <p>{personalInfo.phone || 'Your Phone'}</p>
+            <p>{personalInfo.address || 'Your Address'}</p>
+          </div>
         </div>
       </main>
-      
-      <footer className="app-footer">
-        <p>Happy coding! 🎉</p>
-      </footer>
     </div>
   )
 }
