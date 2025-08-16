@@ -4,9 +4,12 @@ A dynamic CV and résumé generator built with React. Users can input and edit p
 
 ![CV Forge Preview](src/assets/preview.png)
 
+---
 ## Live Demo
 
 🚀 [**View Live Demo: CV Forge**](https://cv-forge-site.netlify.app/)
+
+---
 
 ## Features
 
@@ -23,6 +26,8 @@ A dynamic CV and résumé generator built with React. Users can input and edit p
 - 🔄 Sample data templates
 - 📱 Fully responsive design
 
+---
+
 ## Tech Stack
 
 - React 18
@@ -31,6 +36,8 @@ A dynamic CV and résumé generator built with React. Users can input and edit p
 - JavaScript ES6+
 - html2pdf.js (PDF generation)
 - Local Storage API
+
+---
 
 ## Getting Started
 
@@ -41,7 +48,7 @@ A dynamic CV and résumé generator built with React. Users can input and edit p
 
 ### Installation
 
-\`\`\`bash
+```
 # Clone the repository
 git clone https://github.com/singharyan006/cv-forge.git
 cd cv-forge
@@ -51,13 +58,16 @@ npm install
 
 # Start the development server
 npm run dev
-\`\`\`
+
+```
 
 Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
+---
+
 ## Project Structure
 
-\`\`\`
+```
 src/
 ├── assets/          # Static assets like images
 ├── components/      # React components
@@ -75,7 +85,9 @@ src/
 ├── App.css          # App styles
 ├── main.jsx         # React entry point
 └── index.css        # Global styles
-\`\`\`
+```
+
+---
 
 ## Key Features Explained
 
@@ -114,6 +126,8 @@ Your CV data is automatically saved to your browser's localStorage, ensuring you
 
 Get started quickly with sample CV data that demonstrates how to effectively use each section.
 
+---
+
 ## Future Enhancements
 
 - 📄 Multiple CV templates to choose from
@@ -125,22 +139,26 @@ Get started quickly with sample CV data that demonstrates how to effectively use
 - 📊 Analytics on CV completeness
 - ✅ Spell check and writing suggestions
 
+---
+
 ## The Odin Project
 
 This project is part of The Odin Project curriculum, focusing on React state management and component architecture.
 
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## Acknowledgments
 
 - The Odin Project community for inspiration and guidance
 - All contributors to this project
 
-## Preview
-
-![CV Forge Preview](src/assets/CV-forge.png)
+---
 
 ## Deployment
 
