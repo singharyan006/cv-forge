@@ -14,6 +14,7 @@
 }
 
 a {
+  padding: 0.5rem;
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
