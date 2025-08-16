@@ -8,7 +8,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f5f7fa;
+  background-color: #27374D;
 }
 
 .app {
@@ -23,13 +23,13 @@ header {
 }
 
 header h1 {
-  color: #2563eb;
+  color: #DDE6ED;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 header p {
-  color: #666;
+  color: #9DB2BF;
   font-size: 1.1rem;
 }
 
@@ -37,16 +37,14 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  max-width: 1400px;
   margin: 0 auto;
-  height: calc(100vh - 150px);
 }
 
 /* Form navigation styling */
 .form-nav {
   display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  margin: 1rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
 }
@@ -58,6 +56,7 @@ main {
   color: #4b5563;
   font-weight: 600;
   border-radius: 6px;
+  border-color: #27374D;
   cursor: pointer;
   transition: all 0.2s;
   white-space: nowrap;
@@ -78,6 +77,7 @@ main {
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+  background-color: #526D82;
 }
 
 .form-sections {
