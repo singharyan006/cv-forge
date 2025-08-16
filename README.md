@@ -2,7 +2,7 @@
 
 A dynamic CV and résumé generator built with React. Users can input and edit personal, educational, and professional details, then instantly view a formatted version. Export your CV as a professional PDF with customizable styling options!
 
-[![CV Forge Preview](src/assets/preview.png.png)]
+![CV Forge Preview](src/assets/preview.png)
 
 ## Live Demo
 
