@@ -1,6 +1,6 @@
 // CV Preview Component
 import React, { forwardRef } from 'react';
-import { useCVSettings } from '../../utils/settingsContext';
+import { useCVSettings } from '../../utils/settingsContext.jsx';
 
 const CVPreview = forwardRef(({ data }, ref) => {
   const { personal, contacts, links, education, experience, skills, achievements } = data;
