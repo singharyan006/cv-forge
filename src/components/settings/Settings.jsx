@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import { useCVSettings, availableFonts, availableColorSchemes } from '../../utils/settingsContext';
+import { useCVSettings, availableFonts, availableColorSchemes } from '../../utils/settingsContext.jsx';
 import { generatePDF, generatePDFWithSize, generatePDFWithMargins } from '../../utils/pdfUtils';
-import '../styles/settings.css';
+import '../../styles/settings.css';
 
 const Settings = ({ previewRef }) => {
   const { settings, updateSetting, resetSettings, applyColorScheme } = useCVSettings();
