@@ -1,8 +1,10 @@
 // CV Preview Component
-import React from 'react';
+import React, { forwardRef } from 'react';
+import { useCVSettings } from '../../utils/settingsContext';
 
-const CVPreview = ({ data }) => {
+const CVPreview = forwardRef(({ data }, ref) => {
   const { personal, contacts, links, education, experience, skills, achievements } = data;
+  const { settings } = useCVSettings();
 
   // Format date to display as Month Year
   const formatDate = (dateString) => {
@@ -10,9 +12,16 @@ const CVPreview = ({ data }) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
   };
+  
+  // Apply the custom styles based on settings
+  const customStyles = {
+    fontFamily: settings.font,
+    '--primary-color': settings.primaryColor,
+    '--secondary-color': settings.secondaryColor
+  };
 
   return (
-    <div className="cv-preview">
+    <div className="cv-preview" style={customStyles} ref={ref}>
       {/* Header with name and title */}
       <div className="cv-header">
         <h1>{personal?.fullName || 'Josephine Meyers'}</h1>
@@ -110,6 +119,6 @@ const CVPreview = ({ data }) => {
       </div>
     </div>
   );
-};
+});
 
 export default CVPreview;
