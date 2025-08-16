@@ -2,7 +2,11 @@
 
 A dynamic CV and résumé generator built with React. Users can input and edit personal, educational, and professional details, then instantly view a formatted version. Export your CV as a professional PDF with customizable styling options!
 
-![CV Forge Banner](public/CV-forge.png)
+[![CV Forge Preview](src/assets/preview.png.png)]
+
+## Live Demo
+
+🚀 [**View Live Demo: CV Forge**](https://cv-forge-site.netlify.app/)
 
 ## Features
 
@@ -133,6 +137,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - The Odin Project community for inspiration and guidance
 - All contributors to this project
+
+## Preview
+
+![CV Forge Preview](src/assets/CV-forge.png)
+
+## Deployment
+
+This project is deployed on Netlify. Visit the live application at [cv-forge-site.netlify.app](https://cv-forge-site.netlify.app/).
 
 ---
 
