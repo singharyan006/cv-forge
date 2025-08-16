@@ -1,4 +1,9 @@
 /* CV Preview styles */
+:root {
+  --primary-color: #2e5cb8; /* Default primary color */
+  --secondary-color: #4a4a4a; /* Default secondary color */
+}
+
 .preview-container {
   background-color: #526D82;
   height: 100vh;
@@ -13,10 +18,11 @@
   background: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  color: var(--secondary-color);
 }
 
 .cv-header {
-  background: #1e3a8a;
+  background: var(--primary-color);
   color: white;
   padding: 2rem;
   margin: -2rem -2rem 2rem -2rem;
@@ -42,11 +48,11 @@
 }
 
 .cv-section h2 {
-  color: #1e3a8a;
+  color: var(--primary-color);
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #1e3a8a;
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 0.5rem;
 }
 
