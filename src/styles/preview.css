@@ -1,6 +1,6 @@
 /* CV Preview styles */
 .preview-container {
-  background: white;
+  background-color: #526D82;
   height: 100vh;
   overflow-y: auto;
   padding: 2rem;
