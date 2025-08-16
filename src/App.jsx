@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { useCVData } from './hooks/useCVData';
-import { CVSettingsProvider } from './utils/settingsContext';
+import { CVSettingsProvider } from './utils/settingsContext.jsx';
 
 // Import form components
 import PersonalDetails from './components/forms/PersonalDetails';
