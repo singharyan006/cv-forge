@@ -1,6 +1,7 @@
 // Custom hook for managing CV data
 import { useState, useEffect } from 'react';
 import { saveToLocalStorage, loadFromLocalStorage } from '../utils/localStorage';
+import { sampleData } from '../data/sampleData';
 
 const STORAGE_KEY = 'cvForge:data';
 
@@ -10,23 +11,8 @@ export const useCVData = () => {
     // Try to load from localStorage first
     const saved = loadFromLocalStorage(STORAGE_KEY);
     
-    // Default initial state if nothing in localStorage
-    return saved || {
-      personal: {
-        fullName: '',
-        title: ''
-      },
-      contacts: {
-        email: '',
-        phone: '',
-        location: ''
-      },
-      links: [],
-      education: [],
-      experience: [],
-      skills: [],
-      achievements: []
-    };
+    // Use sample data if nothing in localStorage
+    return saved || sampleData;
   });
   
   // Save to localStorage whenever data changes
@@ -42,17 +28,9 @@ export const useCVData = () => {
     }));
   };
   
-  // Clear all data
+  // Reset to sample data
   const resetData = () => {
-    setData({
-      personal: { fullName: '', title: '' },
-      contacts: { email: '', phone: '', location: '' },
-      links: [],
-      education: [],
-      experience: [],
-      skills: [],
-      achievements: []
-    });
+    setData(sampleData);
   };
   
   return {
